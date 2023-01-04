@@ -23,16 +23,13 @@ struct RecipeView : View {
                     .foregroundColor(Color.blue)
                     .bold()
                 Image(recipe.countryCode)
-//                Text("\(recipe.origin)")
-//                    .font(.subheadline)
-//                    .foregroundColor(Color.purple)
-//                    .italic()
             }
             VStack(alignment: .trailing, spacing: 10) {
                 Button(action: {
+                    Helper.addRemoveFavourite(recipe: self.recipe)
                     self.recipe.favourite.toggle()
-                }){
-                    Image(systemName: self.recipe.favourite ? "star.fill" : "star")
+                }) {
+                    Image(systemName: Helper.isFavourite(name: recipe.name) ? "star.fill" : "star")
                 }
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .trailing)
             
