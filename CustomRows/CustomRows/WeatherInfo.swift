@@ -1,7 +1,7 @@
 //
 //  WeatherInfo.swift
 //  CustomRows
-//  Libro Packt - SwiftUI Cookbook - ButtonsApp
+//  Libro Packt - SwiftUI Cookbook
 //  SwiftUI Cookbook
 //  Giordano Scalzo and Edgar Nzokwe
 //  Created by Angel Del Negro on 08/03/2023.
